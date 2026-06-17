@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTechnology - Dashboard de Monitoreo</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; color: #333; }
+        header { background-color: #1e3a8a; color: white; padding: 20px; text-align: center; border-radius: 8px; margin-bottom: 20px; }
+        .container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 20px; width: 280px; text-align: center; border-top: 5px solid #3b82f6; }
+        .card.camas { border-top-color: #10b981; }
+        .card.temp { border-top-color: #ef4444; }
+        .card.estado { border-top-color: #f59e0b; }
+        h3 { margin-top: 0; color: #555; }
+        .value { font-size: 2.5rem; font-weight: bold; margin: 15px 0; color: #111827; }
+        .status-badge { background-color: #10b981; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HealthTechnology</h1>
+        <p>Sistema de Monitoreo Hospitalario en Tiempo Real</p>
+    </header>
+
+    <div class="container">
+        <!-- Camas Disponibles -->
+        <div class="card camas">
+            <h3>Camas Disponibles</h3>
+            <div class="value">42 / 60</div>
+            <span class="status-badge" style="background-color: #10b981;">Óptimo</span>
+        </div>
+
+        <!-- Temperatura de Refrigeradores -->
+        <div class="card temp">
+            <h3>Temp. Vacunas (IoT)</h3>
+            <div class="value">4.2 °C</div>
+            <span class="status-badge" style="background-color: #10b981;">Estable (2°C - 8°C)</span>
+        </div>
+
+        <!-- Estado del Hospital -->
+        <div class="card estado">
+            <h3>Estado General</h3>
+            <div class="value">Estable</div>
+            <span class="status-badge" style="background-color: #3b82f6;">Operativo</span>
+        </div>
+    </div>
+
+</body>
+</html>
